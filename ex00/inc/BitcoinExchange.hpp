@@ -3,6 +3,7 @@
 #include <iostream>
 #include <map>
 #include <exception>
+#include <fstream>
 
 class BitcoinExchange {
   public:
