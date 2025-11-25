@@ -17,10 +17,10 @@ class PmergeMe {
     ~PmergeMe();
 
     static std::vector<unsigned int> sortVector(const std::vector<unsigned int> &in);
-    static std::vector<unsigned int> sortDeque(const std::deque<unsigned int> &in);
+    static std::deque<unsigned int> sortDeque(const std::deque<unsigned int> &in);
   private:
     static std::vector<unsigned int> fordJohnsonVector(const std::vector<unsigned int> &in);
-    static std::vector<unsigned int> fordJohnsonDeque(const std::deque<unsigned int> &in);
+    static std::deque<unsigned int> fordJohnsonDeque(const std::deque<unsigned int> &in);
     static size_t binarySearchInsertPos(const std::vector<unsigned int> &sorted, unsigned int value);
     static size_t binarySearchInsertPosDeque(const std::deque<unsigned int> &sorted, unsigned int value);
 
