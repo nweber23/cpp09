@@ -17,7 +17,6 @@ std::vector<size_t> PmergeMe::buildJacobsthalSequence(size_t limit) {
   std::vector<size_t> seq;
   if (limit == 0)
     return seq;
-  size_t j0 = 0;
   size_t j1 = 1;
   size_t j2 = 1;
   if (j1 <= limit)
@@ -176,7 +175,7 @@ std::deque<unsigned int> PmergeMe::fordJohnsonDeque(const std::deque<unsigned in
 
   std::deque<unsigned int> lows;
   for (size_t i = 0; i < highs.size(); ++i)
-    lows.push_back(highToLow[highToLow[i]]);
+    lows.push_back(highToLow[highs[i]]);
   std::deque<unsigned int> result = highs;
 
   size_t m = lows.size();
