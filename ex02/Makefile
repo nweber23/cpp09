@@ -1,7 +1,7 @@
 MAKEFLAGS	= -s
 
 CPP			= c++
-CXXFLAGS	= -Wall -Wextra -Werror -std=c++17 -Iinc
+CXXFLAGS	= -Wall -Wextra -Werror -std=c++17 -O3 -Iinc
 
 NAME		= PmergeMe
 
