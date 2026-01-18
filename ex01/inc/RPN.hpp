@@ -1,7 +1,7 @@
 #pragma once
 
 #include <sstream>
-#include <vector>
+#include <list>
 #include <iostream>
 #include <climits>
 #include <string>

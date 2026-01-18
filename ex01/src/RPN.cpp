@@ -27,7 +27,7 @@ static bool validNumber(const std::string& token, long long& number) {
 bool RPN::evaluate(const std::string& expression, long long& result) {
   std::istringstream iss(expression);
   std::string token;
-  std::vector<long long> stack;
+  std::list<long long> stack;
 
   while(iss >> token) {
     if(isOperator(token)) {
